@@ -62,7 +62,7 @@ def compile_list():
     for i in range(listbox_duras.size()):
         durations.append(float(listbox_duras.get(i))*1000)
     if len(images) != len(durations):
-        messagebox.showwarning("Length Mismatch", "Each frame must have a matching duration integer")
+        messagebox.showwarning("Length Mismatch", "Each frame must have a duration numerical")
     if len(images) == 0:
         return
     save_to = file_path = filedialog.asksaveasfilename(
